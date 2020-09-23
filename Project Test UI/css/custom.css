@@ -1,0 +1,74 @@
+.section {
+    padding: 6rem 0 5rem;
+    text-align: center;
+  }
+  .section-heading{
+    margin-bottom: 1.2rem;
+    font-size: 3.8em;
+  }
+  .section-description {
+    margin-bottom: 1.2rem;
+    font-size: 1.3em;
+  }
+  .values {
+    columns: #000000;
+    padding-bottom: 5rem;
+  }
+  .value-multiplier {
+    margin-bottom: .5rem;
+    color: #11DFC7;
+  }
+  .value-projects {
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+  }
+
+  .value-heading {
+    margin-bottom: 1rem;
+  }
+  .value-description {
+    opacity: .8;
+    font-weight: 300;
+    font-size: 1.3em;
+  }
+  .copyright{
+   text-align: center;
+  }
+
+.primer-links{
+    text-decoration: none;
+}
+.primer-links:hover{
+    color: #000000;
+}
+.primer-links:visited{
+    color: #002fff;
+}
+.post-date{
+    color:#010101;
+    float: left;
+}
+.post-author{
+    color:#010101;
+    float: right;
+}
+.post-link{
+    color:#000000;
+  
+}
+.post{
+    font-size: 1.2em;
+}
+
+.experience-heading{
+    font-size: 2.1em;
+}
+.by-author{
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+
+.experience{
+    
+}
