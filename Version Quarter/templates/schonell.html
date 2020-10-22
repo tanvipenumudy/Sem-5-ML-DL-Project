@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p id="initial">Enter the word you hear, click on next to move on to the next word</p>
+<p id="done">Successfully done!</p>
+<div id="ques" style="display: block;">
+  <form>
+  <audio controls="">
+    <source src="https://raw.githubusercontent.com/tanvipenumudy/Sem-5-ML-DL-Project/master/audio/cat.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio><br>
+  <input type="text" name="cat" required>
+</form>
+  </div>
+  
+  <div id="ques" style="display: none;">
+    <form>
+  <audio controls="">
+    <source src="https://raw.githubusercontent.com/tanvipenumudy/Sem-5-ML-DL-Project/master/audio/dog.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio><br>
+  <input type="text" name="dog" required>
+  </form>
+  </div>
+  
+  <button id="open">Next</button>
+  <button id="done">Move to Next</button>
+
+<script type="text/javascript" src="static/jquery-1.9.1.js"></script>
+
+<script>
+var ele = document.querySelectorAll("[id='ques']");
+var ele1 = document.querySelectorAll("[id='done']");
+  var totalQuestions = $('#ques').size();
+  
+  $(function(){
+        $(ele).hide();
+        $(ele1).hide();
+        $(ele[0]).fadeIn();
+        var c = 0;
+      $('#open').on('click',function(){
+  
+       $(ele[c]).fadeOut(function () {
+  
+          //increment the current question by one
+          c = c + 1;
+  
+          //if there are no more questions do stuff
+          if (c == 2) {
+            $(ele1).fadeIn();
+            $('#open').hide();
+            $('#initial').hide();
+  
+          } else {
+  
+              //otherwise show the next question
+              $(ele[c]).fadeIn();
+  
+          }
+      });
+      });
+  
+  });</script>
+
+{% endblock %}
