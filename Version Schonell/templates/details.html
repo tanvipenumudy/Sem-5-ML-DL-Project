@@ -1,0 +1,65 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<h3>Please Enter Details</h3>
+<br>
+<form method="POST" action="{{ url_for('tests') }}">
+  <div class="row">
+    <div class="one-half column">
+  <label for="name">Child's Name*</label><input class="u-full-width" type="text" id="name" name="name" required>
+  </div>
+  <div class="one-half column">
+  <label for="dob">DOB*</label> <input type="date" class="u-full-width" id="dob" name="dob" required></div></div>
+  <div class="row">
+    <div class="one-half column">
+  <label for="school">School/College Name*</label> <input class="u-full-width" type="text" id="school" name="school" required></div>
+    <div class="one-half column">
+  <label for="school">Class*</label> 
+  <select class="u-full-width" id="school" name="school">
+    <option value="0">Pre-Primary</option>
+    <option value="1">I</option>
+    <option value="2">II</option>
+    <option value="3">III</option>
+    <option value="4">IV</option>
+    <option value="5">V</option>
+    <option value="6">VI</option>
+    <option value="7">VII</option>
+    <option value="8">VIII</option>
+    <option value="9">IX</option>
+    <option value="10">X</option>
+    <option value="11">XI</option>
+    <option value="12">XII</option>
+    <option value="13">Completed High School</option>
+    <option value="14">Not going to School</option>
+  </select></div></div>
+  <div class="row">
+    <div class="one-half column">
+      <label for="gender">Gender*</label> 
+  <select class="u-full-width" id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select></div>
+  <div class="one-half column">
+  <label for="lang">Mother Tongue*</label><input class="u-full-width" type="text" id="lang" name="lang" required>
+  </div></div>
+  <div class="row">
+    <div class="one-half column">
+  <label for="mother">Mother's Name*</label><input class="u-full-width" type="text" id="mother" name="mother" required>
+  </div>
+  <div class="one-half column">
+  <label for="father">Father's Name*</label> <input class="u-full-width" type="text" id="father" name="father" required></div></div>
+  <div class="row">
+    <div class="one-half column">
+  <label for="phone">Phone*</label> <input class="u-full-width" type="number" id="phone" name="phone" required></div>
+    <div class="one-half column">
+  <label for="email">Email*</label> <input class="u-full-width" type="email" id="email" name="email" required></div></div>
+  <label>Concerns</label>
+  <textarea class="u-full-width" name="concern"></textarea>
+  <br>
+  <input type="reset">
+  <input type="submit">
+</form> 
+{% endblock %}
