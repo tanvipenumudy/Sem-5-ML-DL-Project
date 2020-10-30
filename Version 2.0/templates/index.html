@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>
+  LD Educational Assessment
+</h2>
+<p>
+  <u><a style="color:black" href="{{ url_for('auth.signup') }}">Sign Up</a></u> now to take a test!<br>
+  Already have an account? <u><a style="color:black" href="{{ url_for('auth.login') }}">Login</a></u>
+</p>
+{% endblock %}
