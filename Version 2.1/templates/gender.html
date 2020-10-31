@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" action="{{ url_for('auth.gender') }}">
+
+    <label for="gender">Gender*</label> 
+    <select name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  <button class="button is-block is-info is-large is-fullwidth">Continue</button>
+</form> 
+{% endblock %}

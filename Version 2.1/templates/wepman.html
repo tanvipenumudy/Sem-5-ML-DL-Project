@@ -1,0 +1,741 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p id="initial">Play both the audios and select if the words are same or different</p>
+<p id="done">Successfully Completed!</p>
+<p id="demo"></p>
+<form method="POST" action="{{ url_for('tests') }}" name="form">
+
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/rub.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/rug.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman0" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman0" value="diff"> Different</label>
+      </div>
+
+      
+      <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/back.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/back.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman1" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman1" value="diff"> Different</label>
+      </div>
+      
+      <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/web.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/wed.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman2" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman2" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/beg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/bed.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman3" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman3" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/park.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/park.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman4" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman4" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/gun.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/done.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman5" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman5" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/boat.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/goat.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman6" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman6" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/seat.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/feet.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman7" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman7" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/van.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/than.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman8" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman8" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/cheek.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/cheap.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman9" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman9" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/prize.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/prize.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman10" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman10" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/reach.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/reach.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman11" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman11" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/thread.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/shred.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman12" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman12" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/went.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/went.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman13" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman13" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/pass.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/path.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman14" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman14" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/ten.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/pen.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman15" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman15" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/sat.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/sack.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman16" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman16" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/din.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/din.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman17" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman17" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/thank.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/sank.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman18" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman18" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/coast.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/toast.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman19" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman19" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/mat.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/map.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman20" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman20" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/done.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/bun.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman21" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman21" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/with.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/with.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman22" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman22" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/come.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/comb.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman23" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman23" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/other.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/over.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman24" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman24" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/mine.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/nine.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman25" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman25" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/shave.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/save.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman26" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman26" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/deaf.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/death.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman27" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman27" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/wing.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/wing.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman28" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman28" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/bridge.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/bridge.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman29" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman29" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/pick.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/kick.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman30" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman30" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/free.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/three.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman31" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman31" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/foal.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/fall.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman32" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman32" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/call.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/call.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman33" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman33" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/tar.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/tar.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman34" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman34" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/pat.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/pet.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman35" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman35" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/buff.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/bus.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman36" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman36" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/rose.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/rose.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman37" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman37" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/mars.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/marsh.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman38" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman38" value="diff"> Different</label>
+      </div>
+    
+    <div id="ques">
+        <div class="row">
+            <div class="one-half column">
+        <audio controls="">
+          <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/ten.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio></div>
+        <div class="one-half column">
+        <audio controls="">
+            <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/wepman/tin.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></div>
+        </div><br>
+          <label><input type="radio" id="wepman" name="wepman39" value="same"> Same</label>
+          <label><input type="radio" id="wepman" name="wepman39" value="diff"> Different</label>
+      </div>
+      
+
+      <button id="done1" onclick="submit_entry();">Move to Next</button>
+    </form>
+    <button id="open">Next</button>
+      
+    <script type="text/javascript" src="static/jquery-1.9.1.js"></script>
+    
+    <script>
+
+    var ele = document.querySelectorAll("[id='ques']");
+    var ele1 = document.querySelectorAll("[id='done']");
+    var ele2 = document.querySelectorAll("[id='done1']");
+    var ans = ['diff','same','diff','diff','same','diff','diff','diff','diff','diff','same','same','diff','same','diff','diff','diff','same','diff','diff','diff','diff','same','diff','diff','diff','diff','diff','same','same','diff','diff','diff','same','same','diff','diff','same','diff','diff'];
+    var c = 0;
+    var w = 0;
+    var wepman = 'wepman'
+    
+      $(function(){
+            $(ele).hide();
+            $(ele1).hide();
+            $(ele2).hide();
+            $(ele[c]).fadeIn();
+            $('#open').on('click',function(){
+            $(ele[c]).fadeOut(function () {
+            var temp = "input[type='radio'][name='"+wepman+c+"']:checked";
+                if(ans[c] != $(temp).val()){
+                    w = w + 1;
+                }
+              //increment the current question by one
+              c = c + 1;
+              //if there are no more questions do stuff
+              var diff = c-w;
+
+            if(c==40){
+            $(ele1).fadeIn();
+            $(ele2).fadeIn();
+            document.getElementById("demo").innerHTML = "Test Score: "+ diff;
+            $('#open').hide();
+            $('#initial').hide();
+            }
+            else {
+  
+              //otherwise show the next question
+              $(ele[c]).fadeIn();
+          }
+          }); 
+          }); 
+      });   
+    </script> 
+{% endblock %}
+
