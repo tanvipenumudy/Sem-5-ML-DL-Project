@@ -1,0 +1,894 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h5 id="initial">Schonell's Spelling Test</h5>
+<p id="initial">Enter the word you hear, click on next to move on to the next word</p>
+<p id="done">Successfully Completed!</p>
+<p id="demo"></p>
+<form method="POST" action="/score" name="form">
+
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/see.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="see" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/cut.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="cut" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/mat.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="mat" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/in.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="in" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/ran.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="ran" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/bag.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="bag" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/ten.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="ten" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/hat.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="hat" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/dad.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="dad" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/bed.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="bed" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/leg.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="leg" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/dot.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="dot" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/pen.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="pen" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/yet.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="yet" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/hay.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="hay" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/good.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="good" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/till.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="till" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/be.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="be" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/with.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="with" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/from.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="from" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/time.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="time" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/call.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="call" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/help.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="help" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/week.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="week" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/pie.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="pie" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/boat.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="boat" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/mind.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="mind" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/sooner.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="sooner" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/year.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="year" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/dream.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="dream" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/sight.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="sight" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/mouth.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="mouth" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/large.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="large" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/might.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="might" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/brought.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="brought" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/mistake.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="mistake" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/pair.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="pair" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/while.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="while" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/skate.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="skate" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/stayed.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="stayed" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/yolk.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="yolk" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/island.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="island" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/nerve.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="nerve" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/join.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="join" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/fare.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="fare" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/iron.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="iron" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/health.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="health" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/direct.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="direct" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/calm.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="calm" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/headache.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="headache" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/final.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="final" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/circus.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="circus" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/increase.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="increase" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/slippery.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="slippery" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/lodge.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="lodge" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/style.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="style" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/bargain.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="bargain" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/copies.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="copies" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/guest.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="guest" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/policy.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="policy" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/view.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="view" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/library.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="library" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/cushion.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="cushion" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/safety.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="safety" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/patient.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="patient" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/account.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="account" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/earliest.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="earliest" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/institution.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="institution" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/similar.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="similar" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/generous.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="generous" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/orchestra.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="orchestra" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/equally.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="equally" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/individual.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="individual" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/merely.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="merely" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/enthusiastic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="enthusiastic" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/appreciate.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="appreciate" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/familiar.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="familiar" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/source.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="source" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/immediate.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="immediate" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/breathe.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="breathe" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/permanent.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="permanent" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/sufficient.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="sufficient" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/broach.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="broach" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/customary.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="customary" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/especially.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="especially" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/materially.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="materially" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/cemetery.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="cemetery" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/leisure.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="leisure" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/accredited.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="accredited" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/fraternally.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="fraternally" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/subterranean.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="subterranean" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/apparatus.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="apparatus" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/portmanteau.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="portmanteau" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/politician.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="politician" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/miscellaneous.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="miscellaneous" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/mortgage.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="mortgage" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/equipped.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="equipped" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/exaggerate.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="exaggerate" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/amateur.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="amateur" id="req">
+  </div>
+  
+  <div id="ques">
+    <audio controls="">
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/committee.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio><br>
+    <input type="text" name="committee" id="req">
+  </div>
+
+  <button id="done1">Move to Next</button>
+</form>
+<button id="open">Next</button>
+  
+<script type="text/javascript" src="static/jquery-1.9.1.js"></script>
+
+<script>
+
+var ele = document.querySelectorAll("[id='ques']");
+var ele1 = document.querySelectorAll("[id='done']");
+var ele2 = document.querySelectorAll("[id='done1']");
+var req = document.querySelectorAll("[id='req']");
+var ini = document.querySelectorAll("[id='initial'");
+var c = 0;
+var w = 0;
+var color = ['#F7B0BB','#C5DCF7','#F7F799','#C9F6CD','#FFB980','#E4CAF6']
+  $(function(){
+        $(ele).hide();
+        $(ele1).hide();
+        $(ele2).hide();
+        $(ele[c]).fadeIn();
+        $('#open').on('click',function(){
+        $(ele[c]).fadeOut(function () {
+          document.body.style.background = color[c%6];
+          if(req[c].name != req[c].value){
+            w = w + 1;
+          }
+          //increment the current question by one
+          c = c + 1;
+          var diff = c-w;
+          //if there are no more questions do stuff
+          if (w>=10) {
+            document.body.style.background = '#FFFFFF';
+            $(ele1).fadeIn();
+            $(ele2).fadeIn();
+            document.getElementById("demo").innerHTML = "Test Score: "+ diff;
+            $('#open').hide();
+            $(ini).hide();
+            var entry = {
+              score: diff
+            };
+            fetch('/schonell',{
+              method: 'POST',
+              credentials: 'include',
+              body: JSON.stringify(entry),
+              cache: 'no-cache',
+              headers: new Headers({
+                'content-type':'application/json'
+              })
+            })
+          } 
+          else if(c==100){
+            document.body.style.background = '#FFFFFF';
+            $(ele1).fadeIn();
+            $(ele2).fadeIn();
+            document.getElementById("demo").innerHTML = "Test Score: "+ diff;
+            $('#open').hide();
+            $(ini).hide();
+            var entry = {
+              score: diff
+            };
+            fetch('/schonell',{
+              method: 'POST',
+              credentials: 'include',
+              body: JSON.stringify(entry),
+              cache: 'no-cache',
+              headers: new Headers({
+                'content-type':'application/json'
+              })
+            })
+          }
+          else {
+  
+              //otherwise show the next question
+              $(ele[c]).fadeIn();
+  
+          }
+      }); 
+      }); 
+  });
+  
+  
+  </script>
+{% endblock %}
