@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<h3>Registered Details</h3>
+<br>
+<div class="row">
+  <div class="one-half column">
+  <b>Child's Name:</b> {{ cname }} </div>
+  <div class="one-half column">
+  <a class="button" href="{{ url_for('auth.cname') }}">Change</a>
+  </div></div>
+  <div class="row">
+    <div class="one-half column">
+  <b>DOB:</b> {{ dob }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.dob') }}">Change</a>
+    </div></div>
+    <div class="row">
+      <div class="one-half column">
+  <b>School's Name:</b> {{ school }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.school') }}">Change</a>
+    </div></div>
+    <div class="row">
+      <div class="one-half column">
+  <b>Class:</b> {{ clas }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.clas') }}">Change</a>
+    </div></div>
+    <div class="row">
+      <div class="one-half column">
+  <b>Gender:</b> {{ gender }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.gender') }}">Change</a>
+    </div></div>
+  <div class="row">
+    <div class="one-half column">
+  <b>Mother's Tongue:</b> {{ lang }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.lang') }}">Change</a>
+    </div></div>
+  <div class="row">
+    <div class="one-half column">
+  <b>Mother's Name:</b> {{ mother }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.mother') }}">Change</a>
+    </div></div>
+  <div class="row">
+    <div class="one-half column">
+  <b>Father's Name:</b> {{ father }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.father') }}">Change</a>
+    </div></div>
+  <div class="row">
+    <div class="one-half column">
+  <b>Phone:</b> {{ phone }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.phone') }}">Change</a>
+    </div></div>
+  <div class="row">
+    <div class="one-half column">
+  <b>Location:</b> {{ location }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.location') }}">Change</a>
+    </div></div>
+  <div class="row">
+    <div class="one-half column">
+  <b>Concerns:</b> {{ concern }} </div>
+  <div class="one-half column">
+    <a class="button" href="{{ url_for('auth.concern') }}">Change</a>
+    </div></div><br><br>
+    <a class="button" href="{{ url_for('tests') }}">Continue</a>
+{% endblock %}

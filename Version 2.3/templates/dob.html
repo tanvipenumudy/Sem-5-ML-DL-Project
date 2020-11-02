@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" action="{{ url_for('auth.dob') }}">
+
+<label for="dob">DOB*</label> <input type="date" name="dob" required>
+  <button class="button is-block is-info is-large is-fullwidth">Continue</button>
+</form> 
+{% endblock %}
