@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h4>Tests</h4>
+<a class="button" href="{{ url_for('auth.schonell') }}">Schonell's Spelling Test</a><br>
+<a class="button" href="{{ url_for('auth.wepman') }}">Wepman's Auditory Test</a><br>
+<a class="button">Burt's Reading Test</a>
+<br><br>
+
+<p>Go to <u><a style="color:black" href="{{ url_for('auth.score') }}">Scores</a></u></p>
+
+{% endblock %}

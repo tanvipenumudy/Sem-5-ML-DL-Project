@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>
+    Account Settings
+</h2>
+<a class="button" href="{{ url_for('auth.set1') }}">Change Email ID</a><br>
+<a class="button" href="{{ url_for('auth.set2') }}">Change Password</a><br>
+<a class="button" href="{{ url_for('auth.change1') }}">Change Details</a><br>
+<a class="button" href="{{ url_for('auth.delete') }}">Delete Account</a><br>
+
+{% endblock %}
