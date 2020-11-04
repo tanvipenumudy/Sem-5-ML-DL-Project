@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>Scores</h4>
+<br>
+<div class="row">
+<div class="one-half column">
+<b>Schonell's Spelling Test:</b> {{ schonell }} </div>
+<div class="one-half column">
+<a class="button" href="{{ url_for('auth.schonell') }}" id="button"></a></div></div>
+<div class="row">
+    <div class="one-half column">
+   <b>Wepman's Auditory Test:</b> {{ wepman }} </div>
+   <div class="one-half column">
+   <a class="button" href="{{ url_for('auth.wepman') }}" id="button1"></a></div></div>
+   <div class="row">
+    <div class="one-half column">
+   <b>Burt's Reading Test:</b> {{ burt }} </div>
+   <div class="one-half column">
+   <a class="button" href="#" id="button2"></a> </div></div> <br>
+   <a class="button" href="{{ url_for('auth.generate') }}">Download Report</a> <br>
+   <a class="button" href="{{ url_for('tests') }}">Go Back to Tests</a>
+
+<script>
+var chk = '{{ schonell }}';
+var chk1 = '{{ wepman }}';
+var chk2 = '{{ burt }}';
+
+  if(chk!='None' && chk!=''){
+    document.querySelector('#button').innerText = 'Retake Test';
+  }
+  else{
+    document.querySelector('#button').innerText = 'Take Test';
+  }
+
+  if(chk1!='None' && chk1!=''){
+    document.querySelector('#button1').innerText = 'Retake Test';
+  }
+  else{
+    document.querySelector('#button1').innerText = 'Take Test';
+  }
+
+  if(chk2!='None' && chk2!=''){
+    document.querySelector('#button2').innerText = 'Retake Test';
+  }
+  else{
+    document.querySelector('#button2').innerText = 'Take Test';
+  }
+
+</script>
+{% endblock %}
