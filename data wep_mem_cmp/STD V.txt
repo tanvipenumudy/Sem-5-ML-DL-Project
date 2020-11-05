@@ -1,0 +1,29 @@
+STD V
+
+1)(A)King
+  (B)Minister
+  (C)Soldier
+  (D)Merchant
+
+2)(A)Borrowed a sum of three thousand ducats
+  (B)Stolen a sum of three thousand ducats
+  (C)Bought a sum of three thousand ducats
+  (D)None of the abpve
+
+3)(A)To help bassino for his marriage
+  (B)For his marriage
+  (C)To buy a new house
+  (D)All the above
+
+4)(A)Servant
+  (B)Farmer
+  (C)Old jew
+  (D)New jew
+
+5)(A)Give his eyes
+  (B)Hang him
+  (C)Cut off a pound of flesh
+  (D)Give his ships
+
+ans:- 1-D,2-A,3-A,4-C,5-C
+

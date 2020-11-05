@@ -1,0 +1,29 @@
+STD IV
+
+1)(A)In house
+  (B)Near village
+  (C)Near river bank
+  (D)In forest
+
+2)(A)Crocodile
+  (B)Crow
+  (C)Monkey
+  (D)Cow
+
+3)(A)Leaves
+  (B)Delicious fruits
+  (C)Insects
+  (D)All of the above
+
+4)(A)Goat
+  (B)Meat
+  (C)Plant
+  (D)None of the above
+
+5)(A)Take fruit to your wife
+  (B)Take meat to your wife
+  (C)Take me to your wife
+  (D)Bring you wife
+
+ans:- 1-C,2-C,3-B,4-D,5-A
+

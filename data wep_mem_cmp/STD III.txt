@@ -1,0 +1,29 @@
+STD III
+
+1)(A)Soldier
+  (B)Minister
+  (C)King
+  (D)None of these
+
+2)(A)Telangana
+  (B)Uttar Pradesh
+  (C)Andhra Pradesh
+  (D)Arunachal Pradesh
+
+3)(A)An elephant
+  (B)A horse
+  (C)A goat
+  (D)All the above
+
+4)(A)Kill goat
+  (B)Ride horse
+  (C)Take good care of horse
+  (D)Sell goat
+
+5)(A)Small room
+  (B)Small pole
+  (C)Tree
+  (D)Big room
+
+ans:- 1-B,2-C,3-B,4-C,5-A
+

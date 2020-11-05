@@ -1,0 +1,29 @@
+STD II
+
+1)(A)Dogs
+  (B)Rats
+  (C)Cats
+  (D)Rabits
+
+2)(A)Small dog
+  (B)Small white cat
+  (C)Big brown cat
+  (D)Big black cat 
+
+3)(A)Big brown cat
+  (B)Small white dog
+  (C)Big rabbit
+  (D)None of the above
+
+4)(A)Big white cat
+  (B)Big grey dog
+  (C)Big black cat 
+  (D)Big grey rat
+
+5)(A)Feed
+  (B)Kill
+  (C)Play
+  (D)None of the above
+
+ans:- 1-B,2-C,3-A,4-D,5-B
+

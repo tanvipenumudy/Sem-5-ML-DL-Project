@@ -1,0 +1,29 @@
+STD VI
+
+1)(A)Blacksmith
+  (B)Beggar
+  (C)Merchant
+  (D)wood-cutter
+
+2)(A)Children 
+  (B)Women with sheeps
+  (C)Men on horses
+  (D)Men on elephants
+
+3)(A)Entered into cave
+  (B)Drank water at river
+  (C)Take rest and went
+  (D)None of the above
+
+4)(A)Went back to his home
+  (B)Entered into cave
+  (C)Take rest and went
+  (D)Went back to work
+
+5)(A)Silver coins
+  (B)Diamonds
+  (C)Heaps of gold coins 
+  (D)Both B and C
+
+ans:- 1-D,2-C,3-A,4-B,5-D
+

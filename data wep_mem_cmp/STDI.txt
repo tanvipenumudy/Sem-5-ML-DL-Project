@@ -1,0 +1,24 @@
+STD 1
+
+1) (A)Guava
+   (B)Papaya
+   (C)Mango
+   (D)Banana
+
+2) (A)Sunflower
+   (B)Lily
+   (C)Lotus
+   (D)Rose
+
+3) (A)Yes
+   (B)No
+
+4) (A)Pink
+   (B)Red
+   (C)Yellow
+   (D)Both B and C
+
+ans:- 1-C,2-D,3-B,4-D
+
+
+
