@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br><br><br><br><br><br><br><br><br><br>
+<p id="demo1"></p>
+<p id="done">Successfully Completed!</p>
+<p id="demo"></p>
+<a class='button' id="done1" href="{{ url_for('auth.score') }}">Move to Next</a>
+<br><br><br><br><br><br><br><br>
+<h3 id="initial">Comprehension</h3>
+<h5 id="ti"><time>00:00:00</time></h5> 
+
+<hr id="initial">
+<p id="initial"><b>Read the below given passage and attempt the questions</b></p>
+<p id="initial">THIS IS A BIG TREE. IT IS A MANGO TREE.<br>
+   THESE ARE MANGOES.<br>
+   THIS IS A ROSE PLANT. THIS IS A ROSE.<br>
+   THIS IS A LEAF. IT IS SMALL.<br>
+   THESE ARE SMALL LEAVES.<br>
+   THESE ARE ROSE PLANTS. THESE ARE ROSES.<br>
+   THESE ARE RED ROSES.<br>
+   THESE ARE YELLOW ROSES.
+   </p>
+   <hr id="initial">
+
+   <div id="ques">
+    <b>1. What is the big tree?</b><br><br>
+      <input type="radio" id="p" name="q0" value="1"> LAN <br>
+      <input type="radio" id="p" name="q0" value="2"> MAN <br>
+      <input type="radio" id="p" name="q0" value="3"> WAN <br>
+      <input type="radio" id="p" name="q0" value="4"> Internetwork <br>
+  </div>
+
+  <div id="ques">
+    <b>2. What is the big tree?</b><br><br>
+      <input type="radio" id="p" name="q1" value="1"> LAN <br>
+      <input type="radio" id="p" name="q1" value="2"> MAN <br>
+      <input type="radio" id="p" name="q1" value="3"> WAN <br>
+      <input type="radio" id="p" name="q1" value="4"> Internetwork <br>
+  </div>
+
+  <div id="ques">
+    <b>3. What is the big tree?</b><br><br>
+      <input type="radio" id="p" name="q2" value="1"> LAN <br>
+      <input type="radio" id="p" name="q2" value="2"> MAN <br>
+      <input type="radio" id="p" name="q2" value="3"> WAN <br>
+      <input type="radio" id="p" name="q2" value="4"> Internetwork <br>
+  </div>
+
+  <div id="ques">
+    <b>4. What is the big tree?</b><br><br>
+      <input type="radio" id="p" name="q3" value="1"> LAN <br>
+      <input type="radio" id="p" name="q3" value="2"> MAN <br>
+      <input type="radio" id="p" name="q3" value="3"> WAN <br>
+      <input type="radio" id="p" name="q3" value="4"> Internetwork <br>
+  </div>
+   <br>
+  <button id="open">Next</button>
+
+
+<script>
+
+</script>
+<script>
+    var ele = document.querySelectorAll("[id='ques']");
+    var ele1 = document.querySelectorAll("[id='done']");
+    var ele2 = document.querySelectorAll("[id='done1']");
+    var ini = document.querySelectorAll("[id='initial'");
+    var ans = ['1','1','1','1'];
+    var c = 0;
+    var w = 0;
+    var q = 'q'
+
+    var h1 = document.querySelectorAll("[id='ti']")[0],
+    stop = document.getElementById('done1'),
+    seconds = 0, minutes = 0, hours = 0,
+    t;
+
+    function add() {
+    seconds++;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+        }
+    }
+    
+    h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+    timer();
+}
+function timer() {
+    t = setTimeout(add, 1000);
+}
+timer();
+
+      $(function(){
+            $(ele).hide();
+            $(ele1).hide();
+            $(ele2).hide();
+            $(ele[c]).fadeIn();
+            $('#open').on('click',function(){
+            $(ele[c]).fadeOut(function () {
+            var temp = "input[type='radio'][name='"+q+c+"']:checked";
+                if(ans[c] != $(temp).val()){
+                    w = w + 1;
+                }
+              //increment the current question by one
+              c = c + 1;
+              //if there are no more questions do stuff
+              var diff = c-w;
+
+            if(c==4){
+            clearTimeout(t);
+            $(ele1).fadeIn();
+            $(ele2).fadeIn();
+            document.getElementById("demo").innerHTML = "Test Score: "+ diff;
+            if(hours==0){
+              h = '00';
+            }
+            if(minutes==0){
+              m = '00';
+            }
+            if(seconds==0){
+              s = '00';
+            }
+            else if(seconds==1){
+              s = '01';
+            }
+            else if(seconds==2){
+              s = '02';
+            }
+            else if(seconds==3){
+              s = '03';
+            }
+            else if(seconds==4){
+              s = '04';
+            }
+            else if(seconds==5){
+              s = '05';
+            }
+            else if(seconds==6){
+              s = '06';
+            }
+            else if(seconds==7){
+              s = '07';
+            }
+            else if(seconds==8){
+              s = '08';
+            }
+            else if(seconds==9){
+              s = '09';
+            }
+            else{
+              s = seconds;
+            }
+            document.getElementById("demo1").innerHTML = "Time Taken: "+h+':'+m+':'+s;
+            document.getElementById("demo").innerHTML = "Test Score: "+ diff;
+            $('#open').hide();
+            $(ini).hide();
+            $(ti).hide();
+            }
+            else {
+  
+              //otherwise show the next question
+              $(ele[c]).fadeIn();
+          }
+          }); 
+          }); 
+      });   
+</script>
+
+{% endblock %}
