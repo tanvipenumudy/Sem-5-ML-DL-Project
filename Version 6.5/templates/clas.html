@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" action="{{ url_for('auth.clas') }}">
+
+    <label for="clas">Class*</label> 
+    <select class="u-full-width" name="clas">
+      <option value="Pre-Primary">Pre-Primary</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="Completed High School">Completed High School</option>
+      <option value="Not going to School">Not going to School</option>
+    </select>
+  <button class="button is-block is-info is-large is-fullwidth">Continue</button>
+</form> 
+{% endblock %}
