@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>Scores</h4>
+<br>
+<div class="row">
+<div class="one-half column">
+<b>Schonell's Spelling Test:</b> {{ schonell }} </div>
+<div class="one-half column">
+<a class="button" href="{{ url_for('auth.schonell') }}" id="button"></a></div></div>
+<div class="row">
+    <div class="one-half column">
+   <b>Wepman's Auditory Test:</b> {{ wepman }} </div>
+   <div class="one-half column">
+   <a class="button" href="{{ url_for('auth.wepman') }}" id="button1"></a></div></div>
+   <div class="row">
+    <div class="one-half column">
+   <b>Burt's Reading Test:</b> {{ burt }} </div>
+   <div class="one-half column">
+   <a class="button" href="{{ url_for('auth.burt') }}" id="button2"></a> </div></div>
+   <div class="row">
+    <div class="one-half column">
+   <b>Auditory Sequential Memory Test (Digit Span):</b> {{ memory }} </div>
+   <div class="one-half column">
+   <a class="button" href="{{ url_for('auth.forward') }}" id="button3"></a> </div></div>
+   <div class="row">
+    <div class="one-half column">
+   <b>Comprehensive Understanding Test:</b> {{ passage }} </div>
+   <div class="one-half column">
+   <a class="button" onclick="func()" id="button4"></a> </div></div> <br>
+   <a class="button" href="{{ url_for('auth.generate') }}">Download Report</a> <br>
+   <a class="button" href="{{ url_for('tests') }}">Go Back to Tests</a>
+
+<script>
+var chk = '{{ schonell }}';
+var chk1 = '{{ wepman }}';
+var chk2 = '{{ burt }}';
+var chk3 = '{{ memory }}';
+var chk4 = '{{ passage }}';
+var clas = '{{ clas }}';
+
+  if(chk!='None' && chk!=''){
+    document.querySelector('#button').innerText = 'Retake Test';
+  }
+  else{
+    document.querySelector('#button').innerText = 'Take Test';
+  }
+
+  if(chk1!='None' && chk1!=''){
+    document.querySelector('#button1').innerText = 'Retake Test';
+  }
+  else{
+    document.querySelector('#button1').innerText = 'Take Test';
+  }
+
+  if(chk2!='None' && chk2!=''){
+    document.querySelector('#button2').innerText = 'Retake Test';
+  }
+  else{
+    document.querySelector('#button2').innerText = 'Take Test';
+  }
+  if(chk3!='None' && chk3!=''){
+    document.querySelector('#button3').innerText = 'Retake Test';
+  }
+  else{
+    document.querySelector('#button3').innerText = 'Take Test';
+  }
+  if(chk4!='None' && chk4!=''){
+    document.querySelector('#button4').innerText = 'Retake Test';
+  }
+  else{
+    document.querySelector('#button4').innerText = 'Take Test';
+  }
+
+  function func() {
+  if(clas=="Pre-Primary" || clas=="1" || clas=="Not going to School"){
+    window.location.href = "{{ url_for('auth.passage1') }}";
+  }
+  else if(clas=="2"){
+    window.location.href = "{{ url_for('auth.passage2') }}";
+  }
+  else if(clas=="3"){
+    window.location.href = "{{ url_for('auth.passage3') }}";
+  }
+  else if(clas=="4"){
+    window.location.href = "{{ url_for('auth.passage4') }}";
+  }
+  else if(clas=="5"){
+    window.location.href = "{{ url_for('auth.passage5') }}";
+  }
+  else if(clas=="6"){
+    window.location.href = "{{ url_for('auth.passage6') }}";
+  }
+  else{
+    window.location.href = "{{ url_for('auth.passage7') }}";
+  }
+}
+
+</script>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br><br><br>
+<h4>Tests</h4>
+<a class="button" href="{{ url_for('auth.schonell') }}">Schonell's Spelling Test</a><br>
+<a class="button" href="{{ url_for('auth.wepman') }}">Wepman's Auditory Test</a><br>
+<a class="button" href="{{ url_for('auth.burt') }}">Burt's Reading Test</a><br>
+<a class="button" href="{{ url_for('auth.forward') }}">Auditory Sequential Memory Test</a><br>
+<a class="button" onclick="func()">Comprehensive Understanding Test</a>
+<br><br>
+
+<p>Go to <u><a style="color:black" href="{{ url_for('auth.score') }}">Scores</a></u></p>
+
+<script>
+var clas = '{{ clas }}';
+
+function func() {
+  if(clas=="Pre-Primary" || clas=="1" || clas=="Not going to School"){
+    window.location.href = "{{ url_for('auth.passage1') }}";
+  }
+  else if(clas=="2"){
+    window.location.href = "{{ url_for('auth.passage2') }}";
+  }
+  else if(clas=="3"){
+    window.location.href = "{{ url_for('auth.passage3') }}";
+  }
+  else if(clas=="4"){
+    window.location.href = "{{ url_for('auth.passage4') }}";
+  }
+  else if(clas=="5"){
+    window.location.href = "{{ url_for('auth.passage5') }}";
+  }
+  else if(clas=="6"){
+    window.location.href = "{{ url_for('auth.passage6') }}";
+  }
+  else{
+    window.location.href = "{{ url_for('auth.passage7') }}";
+  }
+}
+</script>
+
+{% endblock %}
