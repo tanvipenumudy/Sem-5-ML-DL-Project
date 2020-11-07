@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h5 id="demo"></h5><br><br><br>
+<a class="button" href = "{{ url_for('auth.generate') }}" id="button">Download Report</a><br>
+<a class="button" href = "{{ url_for('auth.score') }}" id="button1">Back to Score Page</a>
+
+<script type="text/javascript" src="static/jquery-1.9.1.js"></script>
+
+<script>
+var chk = '{{ schonell }}';
+var chk1 = '{{ wepman }}';
+var chk2 = '{{ burt }}';
+var chk3 = '{{ memory }}';
+var chk4 = '{{ passage }}';
+var clas = '{{ clas }}';
+$('#button').hide();
+$(function(){
+  if(chk=='None' || chk=='' || chk1=='None' || chk1=='' || chk2=='None' || chk2=='' || chk3=='None' || chk3=='' || chk4=='None' || chk4==''){
+    $('#button').hide();
+    document.getElementById('demo').innerText = 'Please Complete All the Tests!';
+  }
+  else{
+    $('#button').fadeIn();
+    document.getElementById('demo').innerText = 'Your Download is Ready!';
+  }
+});
+</script>
+
+{% endblock %}
