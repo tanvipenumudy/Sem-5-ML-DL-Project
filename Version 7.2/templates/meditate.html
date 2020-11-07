@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="aud">
+    <audio controls autoplay>
+      <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/medi.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+<h5>Mindfulness Meditation</h5>
+<img src="static/med.jpg" alt="Med" height="240"><br><br>
+<a class="button" href = "{{ url_for('profile') }}" id="button1">Back to Profile</a>
+
+<script>
+    var aud = document.querySelectorAll("[id='aud'");
+    $(function(){
+        $(aud).hide();
+    });
+</script>
+{% endblock %}
