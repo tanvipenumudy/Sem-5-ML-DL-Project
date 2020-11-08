@@ -425,7 +425,6 @@ def generate():
     pdf.set_font("Arial") 
     pdf.cell(200, 20, txt = "Informal Educational Assessment Report for LD",  ln = 1, align = 'C') 
     pdf.cell(200, 10, txt = '', ln = 2, align = 'L') 
-    pdf.cell(200, 10, txt = "Child's Details -", ln = 2, align = 'L')
     pdf.cell(200, 10, txt = "Name: "+user.cname, ln = 2, align = 'L')
     pdf.cell(200, 10, txt = "Date of Assessment: "+d1, ln = 2, align = 'L')
     pdf.cell(200, 10, txt = "DOB: "+user.dob, ln = 2, align = 'L') 
