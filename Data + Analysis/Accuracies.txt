@@ -1,0 +1,22 @@
+Burt - 98.59 (Classification) - 6 Layered NN - (30,000+) - UK Mental Health Services and LD
+Regression - 0.72 (RMSE)
+
+Schonell - 98.74 (Classification) ,, - (30,000+)- UK Mental Health Services and LD
+Regression - 0.63 (RMSE)
+
+Wepman - 1.0 SVM Classifier (Classification) - (80) - Offline Data
+
+Comprehensive Understanding Test - Ensembled Model - SVM Classifier Linear, Logistic - (246)Regression, Decision Tree and KNN (Classification) - 99.67 - Offline Data
+
+Memory - (Classification) 1.0 - Decision Tree Classification
+       - (Regression) Decision Tree Regressor - 0.84 rmse
+(3000) - Already Digitalized
+
+Archives of Canary International School, Ambitus International School, GIIS (Global Indian International School), Hyd
+
+In Ensemble Model - 
+Training Accuracy (SVM): 0.98
+Training Accuracy (Logistic Regression): 0.9966666666666667
+Training Accuracy (Decision Tree): 0.96
+Training Accuracy (KNN): 0.9966666666666667
+
