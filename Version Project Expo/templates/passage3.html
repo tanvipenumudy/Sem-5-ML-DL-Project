@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br><br><br><br><br><br><br><br><br><br>
+<p id="demo1"></p>
+<p id="done">Successfully Completed!</p>
+<p id="demo"></p>
+<a class='button' id="done1" href="{{ url_for('auth.score') }}">Move to Next</a>
+<br><br><br><br><br><br><br><br>
+<h3 id="initial">Comprehension</h3>
+<h5 id="ti"><time>00:00:00</time></h5> 
+
+<div id="aud">
+  <audio controls autoplay>
+    <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/instruct/passage.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<hr id="initial">
+<p id="initial"><b>Read the below given passage and attempt the questions</b></p>
+<p id="initial">Tenali Ramakrishna was a minister in the court of krishnadeva Raya. He<br>
+    was from Tenali, a place in Andhra Pradesh. There are a number of<br>
+    interesting stories to tell us how he made fun of people. Here is one of them.<br>
+    One day Krishnadeva Raya told Tenali Rama," I want to give you a horse. I <br>
+    want you to take good care of it. I am going to send an official after some<br>
+    times to see your horse. Take the horse with you when you go home this<br>
+    evening. Tenali Rama took the horse home with him that evening. He<br>
+    wanted to have some fun out of this. So he tied his horse in a small room<br>
+    with only one window to it. After a few days the horse became very hungry.<br>
+    He was always looking out of the window for some more hay.
+   </p>
+   <hr id="initial">
+
+   <div id="ques">
+    <b>1. Who was Tenali Ramakrishna?</b><br><br>
+      <input type="radio" id="p" name="q0" value="1"> Soldier <br>
+      <input type="radio" id="p" name="q0" value="2"> Minister <br>
+      <input type="radio" id="p" name="q0" value="3"> King <br>
+      <input type="radio" id="p" name="q0" value="4"> None of these <br>
+  </div>
+
+  <div id="ques">
+    <b>2. Where is Tenali?</b><br><br>
+      <input type="radio" id="p" name="q1" value="1"> Telangana <br>
+      <input type="radio" id="p" name="q1" value="2"> Uttar Pradesh <br>
+      <input type="radio" id="p" name="q1" value="3"> Andhra Pradesh <br>
+      <input type="radio" id="p" name="q1" value="4"> Arunachal Pradesh <br>
+  </div>
+
+  <div id="ques">
+    <b>3. What was he given?</b><br><br>
+      <input type="radio" id="p" name="q2" value="1"> An elephant <br>
+      <input type="radio" id="p" name="q2" value="2"> A horse <br>
+      <input type="radio" id="p" name="q2" value="3"> A goat <br>
+      <input type="radio" id="p" name="q2" value="4"> All the above <br>
+  </div>
+
+  <div id="ques">
+    <b>4. What did the king ask Tenali Rama to do?</b><br><br>
+      <input type="radio" id="p" name="q3" value="1"> Kill the goat <br>
+      <input type="radio" id="p" name="q3" value="2"> Ride the horse <br>
+      <input type="radio" id="p" name="q3" value="3"> Take good care of the horse <br>
+      <input type="radio" id="p" name="q3" value="4"> Sell the goat <br>
+  </div>
+
+  <div id="ques">
+    <b>5. Where did Tenali Rama tie the horse? </b><br><br>
+      <input type="radio" id="p" name="q4" value="1"> Small room <br>
+      <input type="radio" id="p" name="q4" value="2"> Small pole <br>
+      <input type="radio" id="p" name="q4" value="3"> Tree <br>
+      <input type="radio" id="p" name="q4" value="4"> Big room <br>
+  </div>
+   <br>
+  <button id="open">Next</button>
+
+
+<script>
+
+</script>
+<script>
+    var ele = document.querySelectorAll("[id='ques']");
+    var ele1 = document.querySelectorAll("[id='done']");
+    var ele2 = document.querySelectorAll("[id='done1']");
+    var ini = document.querySelectorAll("[id='initial'");
+    var aud = document.querySelectorAll("[id='aud'");
+    var ans = ['2','3','2','3','1'];
+    var c = 0;
+    var w = 0;
+    var q = 'q'
+
+    var h1 = document.querySelectorAll("[id='ti']")[0],
+    stop = document.getElementById('done1'),
+    seconds = 0, minutes = 0, hours = 0,
+    t;
+
+    function add() {
+    seconds++;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+        }
+    }
+    
+    h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+    timer();
+}
+function timer() {
+    t = setTimeout(add, 1000);
+}
+timer();
+
+      $(function(){
+            $(ele).hide();
+            $(ele1).hide();
+            $(aud).hide();
+            $(ele2).hide();
+            $(ele[c]).fadeIn();
+            $('#open').on('click',function(){
+            $(ele[c]).fadeOut(function () {
+            var temp = "input[type='radio'][name='"+q+c+"']:checked";
+                if(ans[c] != $(temp).val()){
+                    w = w + 1;
+                }
+              //increment the current question by one
+              c = c + 1;
+              //if there are no more questions do stuff
+              var diff = c-w;
+
+            if(c==5){
+            clearTimeout(t);
+            $(ele1).fadeIn();
+            $(ele2).fadeIn();
+            if(hours==0){
+              h = '00';
+            }
+            if(minutes==0){
+              m = '00';
+            }
+            if(seconds==0){
+              s = '00';
+            }
+            else if(seconds==1){
+              s = '01';
+            }
+            else if(seconds==2){
+              s = '02';
+            }
+            else if(seconds==3){
+              s = '03';
+            }
+            else if(seconds==4){
+              s = '04';
+            }
+            else if(seconds==5){
+              s = '05';
+            }
+            else if(seconds==6){
+              s = '06';
+            }
+            else if(seconds==7){
+              s = '07';
+            }
+            else if(seconds==8){
+              s = '08';
+            }
+            else if(seconds==9){
+              s = '09';
+            }
+            else{
+              s = seconds;
+            }
+            document.getElementById("demo1").innerHTML = "Time Taken: "+h+':'+m+':'+s;
+            document.getElementById("demo").innerHTML = "Correct Answers: "+ diff+'/5 '+" Score: "+diff*2;
+            $('#open').hide();
+            $(ini).hide();
+            $(ti).hide();
+            var time = (hours*60)+minutes+(seconds/60);
+            var entry = {
+              score: diff*2, time: time
+            };
+            fetch('/passage3',{
+              method: 'POST',
+              credentials: 'include',
+              body: JSON.stringify(entry),
+              cache: 'no-cache',
+              headers: new Headers({
+                'content-type':'application/json'
+              })
+            })
+            }
+            else {
+  
+              //otherwise show the next question
+              $(ele[c]).fadeIn();
+          }
+          }); 
+          }); 
+      });   
+</script>
+
+{% endblock %}
+
+

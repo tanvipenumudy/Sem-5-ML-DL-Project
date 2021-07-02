@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>
+  Welcome, {{ name }}!
+</h2>
+<img src="static/rev.png" alt="Rev" height="240"><br><br>
+
+<a class="button" onclick="func()">Take Test</a>
+<a class="button" href="{{ url_for('auth.account_set') }}">Account Settings</a>
+<a class="button" href="{{ url_for('auth.meditate') }}">Meditate</a>
+
+<script>
+var chk = '{{ cname }}';
+function func() {
+  if(chk!='None'){
+    window.location.href = "{{ url_for('auth.change') }}";
+  }
+  else{
+    window.location.href = "{{ url_for('auth.details') }}";
+  }
+}
+</script>
+{% endblock %}

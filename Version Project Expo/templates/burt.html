@@ -1,0 +1,471 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+  <link rel="stylesheet" href="static/web-speech.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <style>
+    .interim {
+    color: gray;
+    }
+    .final {
+    color: black;
+    }
+    </style>
+  </head>
+<div style="width:500px; margin:0 auto;"> 
+<h5 id="initial">Burt's Reading Test</h5>
+<div id="info"></div>
+<p id="done">Successfully Completed!</p>
+<p id="demo"></p>
+
+<div id="aud">
+  <audio controls autoplay>
+    <source src="https://raw.githubusercontent.com/tanvipenumudy/audio/main/instruct/burt.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div class="container mt-3">
+  
+<div id="ques"><h3>cat</h3></div>
+<div id="ques"><h3>call</h3></div>
+<div id="ques"><h3>dog</h3></div>
+<div id="ques"><h3>sir</h3></div>
+<div id="ques"><h3>his</h3></div>
+<div id="ques"><h3>went</h3></div>
+<div id="ques"><h3>boys</h3></div>
+<div id="ques"><h3>that</h3></div>
+<div id="ques"><h3>girl</h3></div>
+<div id="ques"><h3>from</h3></div>
+<div id="ques"><h3>big</h3></div>
+<div id="ques"><h3>time</h3></div>
+<div id="ques"><h3>done</h3></div>
+<div id="ques"><h3>mind</h3></div>
+<div id="ques"><h3>word</h3></div>
+<div id="ques"><h3>water</h3></div>
+<div id="ques"><h3>just</h3></div>
+<div id="ques"><h3>day</h3></div>
+<div id="ques"><h3>wet</h3></div>
+<div id="ques"><h3>book</h3></div>
+<div id="ques"><h3>dream</h3></div>
+<div id="ques"><h3>dead</h3></div>
+<div id="ques"><h3>comb</h3></div>
+<div id="ques"><h3>pot</h3></div>
+<div id="ques"><h3>things</h3></div>
+<div id="ques"><h3>rope</h3></div>
+<div id="ques"><h3>told</h3></div>
+<div id="ques"><h3>love</h3></div>
+<div id="ques"><h3>now</h3></div>
+<div id="ques"><h3>sad</h3></div>
+<div id="ques"><h3>nurse</h3></div>
+<div id="ques"><h3>carry</h3></div>
+<div id="ques"><h3>quickly</h3></div>
+<div id="ques"><h3>village</h3></div>
+<div id="ques"><h3>scramble</h3></div>
+<div id="ques"><h3>journey</h3></div>
+<div id="ques"><h3>terror</h3></div>
+<div id="ques"><h3>return</h3></div>
+<div id="ques"><h3>twisted</h3></div>
+<div id="ques"><h3>shelves</h3></div>
+<div id="ques"><h3>beware</h3></div>
+<div id="ques"><h3>explorer</h3></div>
+<div id="ques"><h3>known</h3></div>
+<div id="ques"><h3>projecting</h3></div>
+<div id="ques"><h3>tongue</h3></div>
+<div id="ques"><h3>serious</h3></div>
+<div id="ques"><h3>domineer</h3></div>
+<div id="ques"><h3>obtain</h3></div>
+<div id="ques"><h3>belief</h3></div>
+<div id="ques"><h3>lunchtime</h3></div>
+<div id="ques"><h3>emergency</h3></div>
+<div id="ques"><h3>events</h3></div>
+<div id="ques"><h3>steadiness</h3></div>
+<div id="ques"><h3>nourishment</h3></div>
+<div id="ques"><h3>fringe</h3></div>
+<div id="ques"><h3>formulate</h3></div>
+<div id="ques"><h3>scarcely</h3></div>
+<div id="ques"><h3>universal</h3></div>
+<div id="ques"><h3>commenced</h3></div>
+<div id="ques"><h3>overwhelmed</h3></div>
+<div id="ques"><h3>circumstances</h3></div>
+<div id="ques"><h3>destiny</h3></div>
+<div id="ques"><h3>urge</h3></div>
+<div id="ques"><h3>labourers</h3></div>
+<div id="ques"><h3>exhausted</h3></div>
+<div id="ques"><h3>trudging</h3></div>
+<div id="ques"><h3>refrigerator</h3></div>
+<div id="ques"><h3>melodrama</h3></div>
+<div id="ques"><h3>encyclopaedia</h3></div>
+<div id="ques"><h3>apprehend</h3></div>
+<div id="ques"><h3>motionless</h3></div>
+<div id="ques"><h3>ultimate</h3></div>
+<div id="ques"><h3>atmosphere</h3></div>
+<div id="ques"><h3>reputation</h3></div>
+<div id="ques"><h3>binocular</h3></div>
+<div id="ques"><h3>economy</h3></div>
+<div id="ques"><h3>theory</h3></div>
+<div id="ques"><h3>humanity</h3></div>
+<div id="ques"><h3>philosopher</h3></div>
+<div id="ques"><h3>contemptuous</h3></div>
+<div id="ques"><h3>autobiograh3hy</h3></div>
+<div id="ques"><h3>excessively</h3></div>
+<div id="ques"><h3>champagne</h3></div>
+<div id="ques"><h3>terminology</h3></div>
+<div id="ques"><h3>perambulating</h3></div>
+<div id="ques"><h3>efficiency</h3></div>
+<div id="ques"><h3>unique</h3></div>
+<div id="ques"><h3>perpetual</h3></div>
+<div id="ques"><h3>mercenary</h3></div>
+<div id="ques"><h3>glycerine</h3></div>
+<div id="ques"><h3>influential</h3></div>
+<div id="ques"><h3>atrocious</h3></div>
+<div id="ques"><h3>fatigue</h3></div>
+<div id="ques"><h3>exorbitant</h3></div>
+<div id="ques"><h3>physician</h3></div>
+<div id="ques"><h3>microscohpical</h3></div>
+<div id="ques"><h3>contagion</h3></div>
+<div id="ques"><h3>renown</h3></div>
+<div id="ques"><h3>hypocritical</h3></div>
+<div id="ques"><h3>fallacious</h3></div>
+<div id="ques"><h3>alienate</h3></div>
+<div id="ques"><h3>melancholy</h3></div>
+<div id="ques"><h3>palpable</h3></div>
+<div id="ques"><h3>eccentricity</h3></div>
+<div id="ques"><h3>constitutionally</h3></div>
+<div id="ques"><h3>phthisis</h3></div>
+<div id="ques"><h3>phlegmatic</h3></div>
+<div id="ques"><h3>poignancy</h3></div>
+<div id="ques"><h3>ingratiating</h3></div>
+<div id="ques"><h3>subtlety</h3></div>
+
+ 
+  <div id= "mic" class="float-right">
+    <button id="start_button">
+      <img id="start_img" src="static/mic.gif" alt="Start"></button>
+  </div>
+
+  <div id="results">
+    <span id="final_span" class="final"></span>
+    <span id="interim_span" class="interim"></span>
+    <p>
+</div>
+
+<button id="box">Toggle Box</button>                             
+<button id="open">Next</button>
+</div>
+
+<div class="row col-12 p-0 m-0" id="lang">
+    <div class="row col-12 col-md-8 col-lg-6 p-0 m-0">
+        <select id="select_language"></select>
+        <select id="select_dialect"></select>
+    </div>
+  </div>
+</div>
+
+<a class='button' id="done1" href="{{ url_for('auth.score') }}">Move to Next</a>
+
+<script src="static/languages.js"></script>
+<script type="text/javascript" src="static/jquery-1.9.1.js"></script>
+
+<script>
+var messages = {
+  "start": {
+    msg: 'Click on the mic icon and start reading the given word aloud.',
+    class: 'alert-success'},
+  "speak_now": {
+    msg: 'Speak now. Click on the mic icon to stop',
+    class: 'alert-success'},
+  "no_speech": {
+    msg: 'No speech was detected. You may need to adjust your <a href="//support.google.com/chrome/answer/2693767" target="_blank">microphone settings</a>.',
+    class: 'alert-danger'},
+  "no_microphone": {
+    msg: 'No microphone was found. Ensure that a microphone is installed and that <a href="//support.google.com/chrome/answer/2693767" target="_blank">microphone settings</a> are configured correctly.',
+    class: 'alert-danger'},
+  "allow": {
+    msg: 'Click the "Allow" button above to enable your microphone.',
+    class: 'alert-warning'},
+  "denied": {
+    msg: 'Permission to use microphone was denied.',
+    class: 'alert-danger'},
+  "blocked": {
+    msg: 'Permission to use microphone is blocked. To change, go to chrome://settings/content/microphone',
+    class: 'alert-danger'},
+  "upgrade": {
+    msg: 'Web Speech API is not supported by this browser. It is only supported by <a href="//www.google.com/chrome">Chrome</a> version 25 or later on desktop and Android mobile.',
+    class: 'alert-danger'},
+  "stop": {
+      msg: 'Click on the mic icon to restart',
+      class: 'alert-success'},
+  "copy": {
+    msg: 'Content copy to clipboard successfully.',
+    class: 'alert-success'},
+}
+
+var final_transcript = '';
+var recognizing = false;
+var ignore_onend;
+var start_timestamp;
+var recognition;
+
+$( document ).ready(function() {
+  for (var i = 0; i < langs.length; i++) {
+    select_language.options[i] = new Option(langs[i][0], i);
+  }
+  select_language.selectedIndex = 6;
+  updateCountry();
+  select_dialect.selectedIndex = 6;
+  
+  if (!('webkitSpeechRecognition' in window)) {
+    upgrade();
+  } else {
+    showInfo('start');  
+    start_button.style.display = 'inline-block';
+    recognition = new webkitSpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = true;
+
+    recognition.onstart = function() {
+      recognizing = true;
+      showInfo('speak_now');
+      start_img.src = 'static/mic-animation.gif';
+    };
+
+    recognition.onerror = function(event) {
+      if (event.error == 'no-speech') {
+        start_img.src = 'static/mic.gif';
+        showInfo('no_speech');
+        ignore_onend = true;
+      }
+      if (event.error == 'audio-capture') {
+        start_img.src = 'static/mic.gif';
+        showInfo('no_microphone');
+        ignore_onend = true;
+      }
+      if (event.error == 'not-allowed') {
+        if (event.timeStamp - start_timestamp < 100) {
+          showInfo('blocked');
+        } else {
+          showInfo('denied');
+        }
+        ignore_onend = true;
+      }
+    };
+
+    recognition.onend = function() {
+      recognizing = false;
+      if (ignore_onend) {
+        return;
+      }
+      start_img.src = 'static/mic.gif';
+      if (!final_transcript) {
+        showInfo('start');
+        return;
+      }
+      showInfo('stop');
+      if (window.getSelection) {
+        window.getSelection().removeAllRanges();
+        var range = document.createRange();
+        range.selectNode(document.getElementById('final_span'));
+        window.getSelection().addRange(range);
+      }
+    };
+
+    recognition.onresult = function(event) {
+      var interim_transcript = '';
+      for (var i = event.resultIndex; i < event.results.length; ++i) {
+        if (event.results[i].isFinal) {
+          final_transcript += event.results[i][0].transcript;
+        } else {
+          interim_transcript += event.results[i][0].transcript;
+        }
+      }
+      final_transcript = capitalize(final_transcript);
+      final_span.innerHTML = linebreak(final_transcript);
+      interim_span.innerHTML = linebreak(interim_transcript);
+    };
+  }
+});
+
+
+function updateCountry() {
+  for (var i = select_dialect.options.length - 1; i >= 0; i--) {
+    select_dialect.remove(i);
+  }
+  var list = langs[select_language.selectedIndex];
+  for (var i = 1; i < list.length; i++) {
+    select_dialect.options.add(new Option(list[i][1], list[i][0]));
+  }
+  select_dialect.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
+}
+
+
+function upgrade() {
+  start_button.style.visibility = 'hidden';
+  showInfo('upgrade');
+}
+
+var two_line = /\n\n/g;
+var one_line = /\n/g;
+function linebreak(s) {
+  return s.replace(two_line, '<p></p>').replace(one_line, '<br>');
+}
+
+var first_char = /\S/;
+function capitalize(s) {
+  return s.replace(first_char, function(m) { return m.toUpperCase(); });
+}
+
+$("#copy_button").click(function () {
+  if (recognizing) {
+    recognizing = false;
+    recognition.stop();
+  }
+  setTimeout(copyToClipboard, 500);
+  
+});
+
+function copyToClipboard() {
+  if (document.selection) { 
+      var range = document.body.createTextRange();
+      range.moveToElementText(document.getElementById('results'));
+      range.select().createTextRange();
+      document.execCommand("copy"); 
+  
+  } else if (window.getSelection) {
+      var range = document.createRange();
+       range.selectNode(document.getElementById('results'));
+       window.getSelection().addRange(range);
+       document.execCommand("copy");
+  }
+  showInfo('copy');
+}
+
+$("#start_button").click(function () {
+  if (recognizing) {
+    recognition.stop();
+    return;
+  }
+  final_transcript = '';
+  recognition.lang = select_dialect.value;
+  recognition.start();
+  ignore_onend = false;
+  final_span.innerHTML = '';
+  interim_span.innerHTML = '';
+  start_img.src = 'static/mic-slash.gif';
+  showInfo('allow');
+  start_timestamp = event.timeStamp;
+});
+
+$("#select_language").change(function () {
+  updateCountry();
+});
+
+function showInfo(s) {
+  if (s) {
+    var message = messages[s];
+    $("#info").html(message.msg);
+    $("#info").removeClass();
+    $("#info").addClass('alert');
+    $("#info").addClass(message.class);
+  } else {
+    $("#info").removeClass();
+    $("#info").addClass('d-none');
+  }
+}
+</script> 
+
+<script>
+var ele = document.querySelectorAll("[id='ques']");
+var ele1 = document.querySelectorAll("[id='done']");
+var ele2 = document.querySelectorAll("[id='done1']");
+var ini = document.querySelectorAll("[id='initial']");
+var res = document.querySelectorAll("[id='results']");
+var lang = document.querySelectorAll("[id='lang']");
+var info = document.querySelectorAll("[id='info']");
+var mic = document.querySelectorAll("[id='mic']");
+var aud = document.querySelectorAll("[id='aud']");
+var c = 0;
+var w = 0;
+var ans = ['cat','call','dog','sir','his','went','boys','that','girl','from','big','time','done','mind','word','water','just','day','wet','book','dream','dead','comb','pot','things','rope','told','love','now','sad','nurse','carry','quickly','village','scramble','journey','terror','return','twisted','shelves','beware','explorer','known','projecting','tongue','serious','domineer','obtain','belief','lunchtime','emergency','events','steadiness','nourishment','fringe','formulate','scarcely','universal','commenced','overwhelmed','circumstances','destiny','urge','labourers','exhausted','trudging','refrigerator','melodrama','encyclopaedia','apprehend','motionless','ultimate','atmosphere','reputation','binocular','economy','theory','humanity','philosopher','contemptuous','autobiography','excessively','champagne','terminology','perambulating','efficiency','unique','perpetual','mercenary','glycerine','influential','atrocious','fatigue','exorbitant','physician','microscopical','contagion','renown','hypocritical','fallacious','alienate','melancholy','palpable','eccentricity','constitutionally','phthisis','phlegmatic','poignancy','ingratiating','subtlety'];
+var response = [];
+
+$(function(){
+        $(ele).hide();
+        $(ele1).hide();
+        $(aud).hide();
+        $(ele2).hide();
+        $(res).hide(); 
+        $(box).click(function(){
+            $(res).toggle();
+        });
+        $(lang).hide();
+        $(ele[c]).fadeIn();
+        $('#open').on('click',function(){
+        $(ele[c]).fadeOut(function () {
+        response.push(document.getElementById('results').innerText);
+        var resp = response[response.length - 1].split(" ");
+        var str1 = (resp[resp.length - 1].trim()).toLowerCase();
+        var str2 = ans[c];
+        if(str1.localeCompare(str2)!=0){
+          w = w + 1;
+        }
+          c = c + 1;
+          var diff = c-w;
+          if(w>=10){
+            $(res).hide();
+            $(box).hide();
+            $(ele1).fadeIn();
+            $(ele2).fadeIn();
+            document.getElementById("demo").innerHTML = "Test Score: "+ diff;
+            $('#open').hide();
+            $(ini).hide();
+            $(info).hide();
+            $(mic).hide();
+            var entry = {
+              score: diff
+            };
+            fetch('/burt',{
+              method: 'POST',
+              credentials: 'include',
+              body: JSON.stringify(entry),
+              cache: 'no-cache',
+              headers: new Headers({
+                'content-type':'application/json'
+              })
+            })
+          }
+          else if(c==110){
+            $(res).hide();
+            $(box).hide();
+            $(ele1).fadeIn();
+            $(ele2).fadeIn();
+            document.getElementById("demo").innerHTML = "Test Score: "+ diff;
+            $('#open').hide();
+            $(ini).hide();
+            $(info).hide();
+            $(mic).hide();
+            var entry = {
+              score: diff
+            };
+            fetch('/burt',{
+              method: 'POST',
+              credentials: 'include',
+              body: JSON.stringify(entry),
+              cache: 'no-cache',
+              headers: new Headers({
+                'content-type':'application/json'
+              })
+            })
+          }
+          else {
+              $(ele[c]).fadeIn();
+  
+          }
+      }); 
+      }); 
+  });
+
+</script>
+{% endblock %}
+

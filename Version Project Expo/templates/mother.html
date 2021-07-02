@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" action="{{ url_for('auth.mother') }}">
+
+    <label for="mother">Mother's Name*</label><input type="text" name="mother" required>
+  <button class="button is-block is-info is-large is-fullwidth">Continue</button>
+</form> 
+{% endblock %}
